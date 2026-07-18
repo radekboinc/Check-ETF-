@@ -1,0 +1,41 @@
+name: Sprawdź ETF
+
+on:
+  schedule:
+    # 07:15 i 17:15 UTC = ok. 08:15 i 18:15 czasu polskiego (zimą +1h do UTC, latem +2h)
+    - cron: "15 7 * * *"
+    - cron: "15 17 * * *"
+  workflow_dispatch: {}   # pozwala odpalić ręcznie przyciskiem "Run workflow"
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz repozytorium
+        uses: actions/checkout@v4
+
+      - name: Ustaw Pythona
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Zainstaluj zależności
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Uruchom bota
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python check_etf.py
+
+      - name: Zapisz wyniki z powrotem do repozytorium
+        run: |
+          git config user.name "etf-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add history.json docs/index.html
+          git diff --quiet --cached || git commit -m "Aktualizacja danych ETF [automatycznie]"
+          git push
