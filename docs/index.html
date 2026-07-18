@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor ETF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef0ee;
+    --surface: #fbfcfb;
+    --ink: #1b2321;
+    --ink-soft: #55625c;
+    --line: #d7dcd7;
+    --accent: #3d6478;
+    --up: #2f6f4e;
+    --down: #a3403a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 24px 16px 64px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+  }
+  header.top h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  header.top .updated {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 2px;
+  }
+  .card-head h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .isin {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .as-of {
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+  .metrics { margin-top: 12px; }
+  .metric-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 14px;
+    align-items: baseline;
+    padding: 7px 0;
+    border-top: 1px solid var(--line);
+  }
+  .metric-row:first-child { border-top: none; }
+  .metric-label { font-size: 13px; color: var(--ink-soft); }
+  .metric-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+  }
+  .metric-delta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    min-width: 64px;
+    text-align: right;
+  }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .flat { color: var(--ink-soft); }
+  .source-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .source-link:hover { text-decoration: underline; }
+  h3.log-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 28px 0 10px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-top: 1px solid var(--line);
+  }
+  th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    color: var(--ink-soft);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-top: none;
+  }
+  td.num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  tr.log-error td { color: var(--down); font-size: 11px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .card { animation: fade-in 0.4s ease-out; }
+  }
+  @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Monitor ETF</h1>
+    <span class="updated">odświeżono 2026-07-18 06:47 UTC</span>
+  </header>
+
+  
+        <section class="card">
+          <header class="card-head">
+            <h2>Xtrackers MSCI Nordic UCITS ETF 1C</h2>
+            <span class="isin">IE000BO2Y0T8</span>
+          </header>
+          
+          <div class="metrics">
+            <div class="metric-row">
+              <span class="metric-label">NAV</span>
+              <span class="metric-value">—</span>
+              <span class="metric-delta flat">—</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Net Assets</span>
+              <span class="metric-value">—</span>
+              <span class="metric-delta flat">—</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Shares Outstanding</span>
+              <span class="metric-value">—</span>
+              <span class="metric-delta flat">—</span>
+            </div>
+          </div>
+          <a class="source-link" href="https://etf.dws.com/en-gb/IE000BO2Y0T8-msci-nordic-ucits-etf-1c/" target="_blank" rel="noopener">źródło ↗</a>
+        </section>
+        <section class="card">
+          <header class="card-head">
+            <h2>iShares MSCI Europe Health Care Sector UCITS ETF</h2>
+            <span class="isin">IE00BMW42181</span>
+          </header>
+          
+          <div class="metrics">
+            <div class="metric-row">
+              <span class="metric-label">NAV</span>
+              <span class="metric-value">—</span>
+              <span class="metric-delta flat">—</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Net Assets</span>
+              <span class="metric-value">—</span>
+              <span class="metric-delta flat">—</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Shares Outstanding</span>
+              <span class="metric-value">—</span>
+              <span class="metric-delta flat">—</span>
+            </div>
+          </div>
+          <a class="source-link" href="https://www.ishares.com/uk/professional/en/products/315806/ishares-msci-europe-health-care-sector-ucits-etf" target="_blank" rel="noopener">źródło ↗</a>
+        </section>
+
+  <h3 class="log-title">Historia odczytów</h3>
+  <table>
+    <thead><tr><th>Data</th><th>Fundusz</th><th>Wskaźnik</th><th style="text-align:right">Wartość</th></tr></thead>
+    <tbody>
+      <tr><td colspan="4">Brak jeszcze żadnych odczytów.</td></tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
