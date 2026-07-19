@@ -39,6 +39,26 @@
           "error": null
         }
       }
+    },
+    {
+      "timestamp": "2026-07-19 09:17 UTC",
+      "funds": {
+        "nordic": {
+          "nav": 10.03,
+          "net_assets": null,
+          "shares_outstanding": null,
+          "as_of": null,
+          "error": null,
+          "debug_text": "ET­Fs\nETCs\nKnow­ledge\nIn­form­a­tion\nAbout Us\nRisks and Terms\ni\n\nRisk Considerations\n\nShow disclaimer\n\nInvestors should note that the Xtrackers ETFs & ETCs are not capital protected or guaranteed and investors in each Xtrackers ETF or ETC should be prepared and able to sustain losses up to the total capital invested. The value of an investment in an Xtrackers ETF or ETC may go down as well as up and past performance does not predict future returns. Investment in Xtrackers ETFs or ETCs involve risks. For a list of related risks please click on the Risks and Terms tab.\n\n\nImportant security note: Warning of attempted fraud in the name of DWS\n\nWe have detected that fraudulent individuals are misusing the \"DWS\" trademark and the names of DWS employees on the internet and social media. These fraudsters are operating fake websites, Facebook pages, WhatsApp groups and Mobile Apps. Please be aware that DWS does not have any Facebook Ambassador profiles or WhatsApp chats. If you receive any unexpected calls, messages, or emails claiming to be from DWS, exercise caution and do not make any payments or disclose personal information. We encourage you to report any suspicious activity to info@dws.com, including any relevant documents and the original fraudulent email. Additionally, if you believe you have been a victim of fraud, please notify your local authorities and take steps to protect yourself.\n\nHomeProduct finderETFsXtrackers MSCI Nordic UCI...\nXtrackers MSCI Nordic UCITS ETF 1C\nISIN: IE000BO2Y0T8\nISIN:\nIE000BO2Y0T8\nIndex key features\nThe MSCI Nordic Countries Index aims to reflect the performance of the following market:\nLarge and mid-cap companies from developed Nordic countries\nCovers approximately 85% of free-float market capitalisation\nWeighted by free-float adjusted market capitalisation\nReviewed on a quarterly basis\nAdditional information on the index, selection and weighting methodology is available at https://www.msci.com\nAll doc­u­ments\nA sub fund of Xtrackers (IE) Plc.\nNAV, As of 16/07/2026\nNAV\nAs of 16/07/2026\n8.67 GBP\nNAV, As of 16/07/2026\nNAV\nAs of 16/07/2026\n10.22 EUR\nTotal AUM of fund, As of 16/07/2026\nTotal AUM of fund\nAs of 16/07/2026\n954.91 M GBP\nAll-in-fee (TER)\nAll-in-fee (TER)\n0.30%\nAsset class\nAsset class\nEquit­ies\nRegion\nRegion\nDe­veloped Mar­kets\nEurope\nDistribution policy\nDistribution policy\nCapitalizing\nSub-fund launch date\nSub-fund launch date\n04/09/2013\nPerformance\n16/07/2026\nStart date: 04/02/2025. End date: 05/02/2025. NAV %: 0.00%. NAV: 9.29.\nPerformance\nNAV history\n1M\n3M\n6M\nYTD\n1Y\nMAX\nNAV (EUR)\n\n10.03%\nNAV (EUR)\nMSCI NORDIC COUNTRIES INDEX (EUR)\nChart\nCombination Chart\nView as data table\nThe chart has 1 X-axis displaying Date.\nThe chart has 3 Y-axes displaying Percent change.\nPercent change\nMar 25\nMay 25\nJul 25\nSep 25\nNov 25\nJan 26\nMar 26\nMay 26\nJul 26\n-20\n-10\n0\n10\n20\nSource: DWS\n\nPast performance does not predict future returns. Performance shown above is net of fund fees and any index replication costs. The prices used for the charts are daily Net Asset Values (NAV) and index closing prices. ETF performance calculation includes reinvested dividends.\n\nHow it works: The chart shows the performance of the Net Asset Value (NAV) of the ETF and the corresponding underlying index. The NAV and index chart can be activated by clicking on the index and ETF NAV buttons above the chart respectively. Placing the mouse over the chart results in a text box displaying the NAV and index values with the corresponding date above the chart. The date can be adjusted with the slider below the chart.\n\nThe prices used for the charts are daily Net Asset Values (NAV) and index closing prices. The information on this page is for information purposes only. None of DWS or its affiliates or any information provider makes any express or implied warranty of any kind regarding the information on this page. None of DWS or its affiliates or the information providers will be liable to anyone for any interruption, inaccuracy, error or "
+        },
+        "healthcare": {
+          "nav": 7.26,
+          "net_assets": 884787736.0,
+          "shares_outstanding": 121800000.0,
+          "as_of": "17.Jul.2026",
+          "error": null
+        }
+      }
     }
   ]
 }
