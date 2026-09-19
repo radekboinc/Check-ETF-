@@ -2479,6 +2479,26 @@
           "error": null
         }
       }
+    },
+    {
+      "timestamp": "2026-09-19 19:19 UTC",
+      "funds": {
+        "nordic": {
+          "nav": null,
+          "net_assets": null,
+          "shares_outstanding": null,
+          "as_of": null,
+          "error": "Nie udało się dopasować żadnej wartości na stronie DWS. To pierwszy typowy problem po uruchomieniu — daj mi znać, wklej fragment 'debug_text' z historii, a poprawię wzorce.",
+          "debug_text": "Main­ten­an­ce\n\nWe are currently updating our site to improve your experience. We apologize for any inconvenience this may cause. Please try back as this interruption should be brief.\n\nIf you have immediate needs you can reach out to us at:\n\ninfo@dws.com\n+49 (69) 910 12371\nFor US In­ves­tors – plea­se con­tact:\nDWS Direct – Mutual Fund Shareholder Servicing (including Prospectus and Performance)\nRepresentatives available between 7 a.m. to 6 p.m. CT, Monday-Friday\n(800) 728-3337 or service@dws.com\nDWS Closed End Funds (including Pricing and Distributions)\nAutomated assistance available 24 hours a day\n(800) 349-4281\nThe New Germany Fund, Inc. (The Central and Eastern Europe Fund, Inc. and The European Equity Fund, Inc.)\n(800) 437-6269 or 1-800-GERMANY\nETF Investors (including Prospectus and Performance)\nCall (855) 329-3837\nKontakt\nNews­let­ter\nLinkedIn\nYouTube\nFacebook\nIm­print"
+        },
+        "healthcare": {
+          "nav": null,
+          "net_assets": 855466143.0,
+          "shares_outstanding": 122000000.0,
+          "as_of": null,
+          "error": null
+        }
+      }
     }
   ]
 }
