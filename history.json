@@ -3879,6 +3879,26 @@
           "error": null
         }
       }
+    },
+    {
+      "timestamp": "2026-10-24 19:29 UTC",
+      "funds": {
+        "nordic": {
+          "nav": null,
+          "net_assets": null,
+          "shares_outstanding": null,
+          "as_of": null,
+          "error": "Nie udało się dopasować żadnej wartości na stronie DWS. To pierwszy typowy problem po uruchomieniu — daj mi znać, wklej fragment 'debug_text' z historii, a poprawię wzorce.",
+          "debug_text": "Cookies Policy\n\nWe use cookies and similar technologies that are essential to operate our websites.  With your consent, we will use cookies for performance analysis of our websites. This enables us to detect and fix errors and usability issues as soon as possible and to constantly improve our website. Furthermore we use marketing cookies to measure the success of our marketing measures and personalize our contents to your needs as precisely as possible, potentially also outside of our websites. In the settings you can find detailed information on the different types of cookies and object to the use of cookies. As an asset manager, the security of your data is highest priority to us. You can find further information in our privacy notice.\n\nReject\nAccept all cookies"
+        },
+        "healthcare": {
+          "nav": 7.6,
+          "net_assets": 927253091.0,
+          "shares_outstanding": 122000000.0,
+          "as_of": "23.Oct.2026",
+          "error": null
+        }
+      }
     }
   ]
 }
